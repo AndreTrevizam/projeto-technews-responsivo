@@ -8,8 +8,16 @@
   display: none;
 }
 
+.gap-\.5 {
+  gap: .5rem;
+}
+
 .gap-1 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
 }
 
 .grid {

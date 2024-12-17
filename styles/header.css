@@ -1,0 +1,29 @@
+header {
+  & nav {
+    justify-content: space-between;
+    width: 100%;
+
+    & span {
+      font-size: var(--fs-base);
+      color: var(--text-color-primary);
+    }
+  }
+
+  & .topics {
+    justify-content: space-between;
+    border: 1px solid var(--stroke-color);
+    border-inline: none;
+    padding-block: .875rem;
+
+    & p {
+      font-size: var(--fs-sm);
+      color: var(--text-color-secondary);
+    }
+  }
+
+  @media (width >= 80em) {
+    .logo {
+      width: 10rem;
+    }
+  }
+}
