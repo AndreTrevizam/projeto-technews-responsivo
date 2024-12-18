@@ -81,6 +81,10 @@
   padding-block: var(--py-sm);
 }
 
+.divider {
+  border: 1px solid var(--stroke-color);
+}
+
 @media (width >= 80em) {
   .container {
     max-width: 80rem;

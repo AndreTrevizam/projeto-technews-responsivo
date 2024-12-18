@@ -59,6 +59,17 @@ h1 {
   line-height: 1.35;
 }
 
+a {
+  text-decoration: none;
+  color: var(--text-color-secondary);
+  font-weight: var(--fw-sb);
+  font-size: var(--fs-sm);
+}
+
+a:hover {
+  color: var(--brand-color-light);
+}
+
 h2, h3 {
   line-height: 1.40;
 }

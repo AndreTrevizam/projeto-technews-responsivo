@@ -1,4 +1,6 @@
 #featured {
+  padding-bottom: 1rem;
+
   & .card {
     & .highlight {
       height: 26rem;
@@ -40,8 +42,6 @@
 }
 @media (width >= 80em) {
   #featured {
-    grid-template-areas: "featured featured";
-    grid-area: featured;
     grid-template-columns: 1fr 1fr;
 
     & #desktop-grid {
@@ -49,6 +49,41 @@
       gap: 1rem;
     }
 
+  }
+}
+
+
+#weekly {
+  & .divider {
+    margin-top: 2rem;
+  }
+  & header {
+    justify-content: space-between;
+
+    & h3 {
+      font-weight: var(--fw-sb);
+      font-size: var(--fs-sm);
+      color: var(--text-color-secondary);
+    }
+  }
+
+  & p {
+    font-weight: var(--fw-xb);
+    font-size: var(--fs-base);
+    line-height: 1.4;
+  }
+  
+}
+
+@media (width >= 80em) {
+  #weekly {
+    & .divider {
+      margin-top: 5rem;
+    }
+
+    &>div {
+      grid-template-columns: repeat(4, 18.25rem);
+    }
   }
 }
 
