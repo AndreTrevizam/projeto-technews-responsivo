@@ -89,6 +89,7 @@ img {
   main {
     grid-template-columns: 2fr 1.42fr;
 
+    column-gap: 2rem;
     grid-template-areas: 
     "featured featured"
     "weekly weekly"
