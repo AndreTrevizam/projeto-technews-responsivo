@@ -85,4 +85,13 @@ img {
     --py-base: 1rem;
     --py-lg: 2rem;
   }
+
+  main {
+    grid-template-columns: 2fr 1.42fr;
+
+    grid-template-areas: 
+    "featured featured"
+    "weekly weekly"
+    "highlights aside";
+  }
 }

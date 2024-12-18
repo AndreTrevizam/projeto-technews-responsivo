@@ -4,6 +4,10 @@
   margin-inline: auto;
 }
 
+.mobile-only {
+  display: initial;
+}
+
 .desktop-only {
   display: none;
 }
@@ -92,5 +96,9 @@
 
   .desktop-only {
     display: initial;
+  }
+
+  .mobile-only {
+    display: none;
   }
 }

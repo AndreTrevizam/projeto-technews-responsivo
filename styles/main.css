@@ -43,7 +43,7 @@
 @media (width >= 80em) {
   #featured {
     grid-template-columns: 1fr 1fr;
-
+    grid-area: featured;
     & #desktop-grid {
       grid-template-columns: 1fr 1fr;
       gap: 1rem;
@@ -72,11 +72,17 @@
     font-size: var(--fs-base);
     line-height: 1.4;
   }
+
+  margin-bottom: 2rem;
   
 }
 
 @media (width >= 80em) {
+
+
   #weekly {
+    grid-area: weekly;
+
     & .divider {
       margin-top: 5rem;
     }
@@ -84,6 +90,51 @@
     &>div {
       grid-template-columns: repeat(4, 18.25rem);
     }
+
+    margin-bottom: 5rem;
+  }
+}
+
+#highlights {
+  & article {
+    margin-top: 2rem;
+    grid-template-columns: 0.35fr 1fr;
+  }
+
+  .divider {
+    margin-bottom: .75rem;
+  }
+
+  & header {
+    justify-content: space-between;
+
+    & h3 {
+      font-weight: var(--fw-sb);
+      font-size: var(--fs-sm);
+      color: var(--text-color-secondary);
+    }
+  }
+
+  & img {
+    width: 5rem;
+  }
+}
+
+@media (width >= 80em) {
+  #highlights {
+    grid-area: highlights;
+    max-width: 696px;
+
+    & article {
+      margin-top: 2rem;
+      grid-template-columns: 1fr;
+      grid-auto-flow: column;
+    }
+  
+    & img {
+      width: 11rem;
+    }
+
   }
 }
 
