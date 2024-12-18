@@ -1,0 +1,54 @@
+#featured {
+  & .card {
+    & .highlight {
+      height: 26rem;
+    }
+
+    position: relative;
+    overflow: hidden;
+    border-radius: .25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      top: 50%;
+      background: linear-gradient(
+        180deg,
+        transparent 0%,
+        #020617 100%
+      );
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    & .card-content {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      
+      & h1{
+        font-size: var(--fs-lg);
+      }
+    }
+  }
+}
+@media (width >= 80em) {
+  #featured {
+    grid-template-areas: "featured featured";
+    grid-area: featured;
+    grid-template-columns: 1fr 1fr;
+
+    & #desktop-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+  }
+}
+
