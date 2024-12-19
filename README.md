@@ -5,7 +5,7 @@ Um site de noticias do mundo tech!
 
 O site é totalmente responsivo, sendo um marco importante no meu aprendizado.
 
-https://andretrevizam.github.io/projeto-zingen/
+https://andretrevizam.github.io/projeto-technews-responsivo/
 
 
 
